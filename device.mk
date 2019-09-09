@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     NotchBarKiller
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # tri-state key
 PRODUCT_PACKAGES += \
     tri-state-key-calibrate_daemon
