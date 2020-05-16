@@ -39,6 +39,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys
+    ro.build.fingerprint=google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys
 
 BUILD_FINGERPRINT := "OnePlus/OnePlus7T/OnePlus7T:10/QKQ1.190716.003/2003271900:user/release-keys"
