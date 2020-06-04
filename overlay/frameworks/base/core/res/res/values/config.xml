@@ -67,17 +67,17 @@
         <item>2.0487</item>
         <item>4.8394</item>
         <item>17.2619</item>
-        <item>39.2619</item>
-        <item>50.671</item>
-        <item>92.3019</item>
-        <item>94.2512</item>
-        <item>98.37</item>
-        <item>100.152</item>
-        <item>105.297</item>
-        <item>120.385</item>
-        <item>142.064</item>
-        <item>226.5179</item>
-        <item>248.0267</item>
+        <item>33.2619</item>
+        <item>49.671</item>
+        <item>65.3019</item>
+        <item>77.2512</item>
+        <item>95.37</item>
+        <item>117.152</item>
+        <item>144.297</item>
+        <item>170.385</item>
+        <item>201.064</item>
+        <item>222.5179</item>
+        <item>268.0267</item>
         <item>353.2814</item>
         <item>427.6287</item>
     </array>
@@ -347,7 +347,7 @@
     <!-- Initial light sensor event rate in milliseconds for automatic brightness control. This is
          used for obtaining the first light sample when the device stops dozing.
          Set this to -1 to disable this feature. -->
-    <integer name="config_autoBrightnessInitialLightSensorRate">-1</integer>
+    <integer name="config_autoBrightnessInitialLightSensorRate">60</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
     <integer translatable="false" name="config_brightness_ramp_rate_fast">400</integer>
