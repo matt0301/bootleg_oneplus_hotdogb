@@ -165,6 +165,7 @@
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
+        <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -190,7 +191,6 @@
         <item>23</item>
         <item>24</item>
         <item>25</item>
-        <item>26</item>
         <item>30</item>
         <item>35</item>
         <item>40</item>
@@ -262,6 +262,7 @@
         <item>1300</item>
         <item>2000</item>
         <item>3300</item>
+        <item>6000</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
@@ -271,19 +272,20 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
-        <item>9000</item> <!-- 1 -->
-        <item>8000</item> <!-- 4 -->
-        <item>7000</item> <!-- 12 -->
-        <item>5000</item> <!-- 20 -->
-        <item>3500</item> <!-- 40 -->
-        <item>2500</item> <!-- 65 -->
-        <item>2000</item> <!-- 90 -->
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>1500</item>
         <item>2000</item>
         <item>2000</item>
         <item>2000</item>
         <item>2000</item>
         <item>1500</item>
         <item>1500</item>
+        <item>1000</item>
         <item>1000</item>
         <item>1000</item>
     </integer-array>
@@ -295,21 +297,22 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>600</item>
+        <item>600</item>
+        <item>600</item>
+        <item>600</item>
+        <item>600</item>
+        <item>600</item>
+        <item>600</item>
+        <item>600</item>
+        <item>600</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
     </integer-array>
 
     <!-- Screen brightness used to dim the screen when the user activity
@@ -330,18 +333,21 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">3000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">3000</integer>
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
          For this time after the screen turns on, the Power Manager
          will not debounce light sensor readings -->
     <integer name="config_lightSensorWarmupTime">200</integer>
 
+    <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
+    <bool name="config_allowAutoBrightnessWhileDozing">false</bool>
+
     <!-- Initial light sensor event rate in milliseconds for automatic brightness control. This is
          used for obtaining the first light sample when the device stops dozing.
          Set this to -1 to disable this feature. -->
-    <integer name="config_autoBrightnessInitialLightSensorRate">120</integer>
+    <integer name="config_autoBrightnessInitialLightSensorRate">-1</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
     <integer translatable="false" name="config_brightness_ramp_rate_fast">400</integer>
