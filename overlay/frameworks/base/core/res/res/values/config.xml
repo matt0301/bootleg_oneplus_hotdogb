@@ -165,7 +165,6 @@
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
-        <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -191,6 +190,7 @@
         <item>23</item>
         <item>24</item>
         <item>25</item>
+        <item>26</item>
         <item>30</item>
         <item>35</item>
         <item>40</item>
