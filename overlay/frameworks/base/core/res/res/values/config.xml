@@ -67,17 +67,17 @@
         <item>2.0487</item>
         <item>4.8394</item>
         <item>17.2619</item>
-        <item>33.2619</item>
-        <item>49.671</item>
-        <item>65.3019</item>
-        <item>77.2512</item>
-        <item>95.37</item>
-        <item>117.152</item>
-        <item>144.297</item>
-        <item>170.385</item>
-        <item>201.064</item>
-        <item>222.5179</item>
-        <item>268.0267</item>
+        <item>39.2619</item>
+        <item>50.671</item>
+        <item>92.3019</item>
+        <item>94.2512</item>
+        <item>98.37</item>
+        <item>100.152</item>
+        <item>105.297</item>
+        <item>120.385</item>
+        <item>142.064</item>
+        <item>226.5179</item>
+        <item>248.0267</item>
         <item>353.2814</item>
         <item>427.6287</item>
     </array>
@@ -244,22 +244,23 @@
          the screen brightness is recalculated. See the config_dynamicHysteresisLuxLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_dynamicHysteresisBrightLevels">
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
         <item>300</item>
         <item>300</item>
         <item>300</item>
         <item>400</item>
-        <item>400</item>
         <item>500</item>
-        <item>500</item>
-        <item>600</item>
-        <item>600</item>
-        <item>600</item>
-        <item>600</item>
-        <item>700</item>
-        <item>700</item>
-        <item>700</item>
-        <item>800</item>
-        <item>800</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -269,6 +270,7 @@
          the screen brightness is recalculated. See the config_dynamicHysteresisLuxLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_dynamicHysteresisDarkLevels">
+        <item>200</item>
         <item>200</item>
         <item>200</item>
         <item>200</item>
@@ -411,8 +413,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">3000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">6000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">3500</integer>
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
          For this time after the screen turns on, the Power Manager
@@ -420,7 +422,7 @@
     <integer name="config_lightSensorWarmupTime">200</integer>
 
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
-    <bool name="config_allowAutoBrightnessWhileDozing">false</bool>
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
 
     <!-- Initial light sensor event rate in milliseconds for automatic brightness control. This is
          used for obtaining the first light sample when the device stops dozing.
