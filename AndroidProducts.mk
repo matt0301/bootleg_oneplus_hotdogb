@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/candy_hotdogb.mk
+    $(LOCAL_DIR)/bootleg_hotdogb.mk
 
 COMMON_LUNCH_CHOICES := \
-    candy_hotdogb-user \
-    candy_hotdogb-userdebug \
-    candy_hotdogb-eng
+    bootleg_hotdogb-user \
+    bootleg_hotdogb-userdebug \
+    bootleg_hotdogb-eng
